@@ -41,5 +41,5 @@ model address {
   id_profiles Int @unique
   createdAt DateTime @default(now())
   updateAt DateTime @updatedAt
-  profile profiles @relation(fields: [id_profiles], references: [id])
+  profiles profiles @relation(fields: [id_profiles], references: [id])
 }

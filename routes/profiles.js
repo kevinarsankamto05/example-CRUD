@@ -1,7 +1,7 @@
 const express = require("express"),
   router = express.Router(),
-  alamat = require("../controllers/alamat");
+  profileControllers = require("../controllers/profileControllers");
 
-router.post("/alamat");
+router.get("/readProfile", profileControllers.getProfile);
 
 module.exports = router;
